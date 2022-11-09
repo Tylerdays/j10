@@ -11,7 +11,10 @@ if (mycity.capital){
     console.log("Not important enough");
 }
 
-mycity.comm = ["Something", ];
+mycity.comm = [{
+    name : "Something",
+    pop: 100
+}];
 console.log(mycity.comm);
 
 mycity.comm.push("someplace");
@@ -19,6 +22,11 @@ mycity.comm.push("somespot");
 mycity.comm.push("somehouse");
 mycity.comm.push("somebuilding");
 mycity.comm.push("somerset");
-mycity.comm.push("someguy");
-mycity.comm.push("dave");
-mycity.comm.push("dupes");
+
+let i = 0;
+while (i < mycity.comm.length){
+    console.log(mycity.comm[i])
+    i++;
+}
+
+
