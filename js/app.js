@@ -14,19 +14,59 @@ if (mycity.capital){
 mycity.comm = [{
     name : "Something",
     pop: 100
-}];
+},
+]
 console.log(mycity.comm);
 
-mycity.comm.push("someplace");
-mycity.comm.push("somespot");
-mycity.comm.push("somehouse");
-mycity.comm.push("somebuilding");
-mycity.comm.push("somerset");
+
+// Pushing an object
+mycity.comm.push({
+            name : "Something",
+            pop: 100
+        },
+);
+mycity.comm.push({
+            name : "somespot",
+            pop: 1006
+        },
+);
+mycity.comm.push({
+            name : "somehouse",
+            pop: 1007
+            },
+);
+mycity.comm.push({
+            name : "Somebuilding",
+            pop: 1009
+        },
+);
+
+mycity.comm.push({
+    name : "somestore",
+    pop: 1000
+},);
+
+
+//good reference for how to get into difficult objects
 
 let i = 0;
+console.log("Large Communities")
 while (i < mycity.comm.length){
-    console.log(mycity.comm[i])
+    if (mycity.comm[i].pop >= 100){
+        console.log(mycity.comm[i].name)
+    }
     i++;
 }
 
 
+
+var randomNumbers = [1, 2, 3, 4, 5]
+
+randomNumbers.push(6)
+randomNumbers.push(7)
+
+let i =0;
+console.log("number counter")
+while (randomNumbers.length)  {
+
+}
